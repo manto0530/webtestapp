@@ -9,6 +9,9 @@ Bundler.require(*Rails.groups)
 module WebtestApp
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
+
+    config.third_party_endpoints = ['https://third-party-api.com/endpoint1', 'https://third-party-api.com/endpoint2']
+    
     config.load_defaults 5.2
 
     # Settings in config/environments/* take precedence over those specified here.
